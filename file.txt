@@ -1,0 +1,8 @@
+File 1
+
+E:\1PepCoding\hw1\file.txt
+Line1 check
+
+
+
+line 2
