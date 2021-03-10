@@ -33,13 +33,13 @@ for(let value of input){
   }
 }
 
-if(option1.length>0 && option2.length>0){
+if(option1.length>0 && option2.length>0){                   // line-break and line-numbering
   lineBreak_and_numObj.lineBreakAndNo(input[count],option2);
   
-}else if(option1.length>0){               // -s
+}else if(option1.length>0){                                 // muliple line breaks to single line break
   lineBreakObj.lineBreakFn(input[count]);
 
-}else if(option2.length>0){               // -n or -b
+}else if(option2.length>0){                                // line-numbering
   if(option2=="-n"){
     num_all_linesObj.allLinesFn(input[count]);
   }else{
@@ -49,9 +49,9 @@ if(option1.length>0 && option2.length>0){
 }else{
   input=input.slice(count);
 
-  if(input[0]=="help"){
+  if(input[0]=="help"){                                   // help
     helpObj.help();
-  }else{
+  }else{                                                  // Display Files
     displayObj.displayFn(input);
   }
   
